@@ -16,10 +16,13 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/admin_toolbar": "^3.4",
         "drupal/colorbox": "^2.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/d8w3css": "^2.0",
+        "drupal/fullcalendar_view": "^5.1",
         "drupal/media_migration": "^1.0@alpha",
         "drupal/migrate_plus": "6.0",
         "drupal/migrate_tools": "^6.0"
@@ -27,7 +30,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
