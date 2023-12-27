@@ -1,0 +1,40 @@
+name: CursilloSac Theme
+type: theme
+description: "This is a custom theme based on Zymphonies Drupal 10 Responsive Theme."
+base theme: business_responsive_theme
+core_version_requirement: ^8 || ^9 || ^10
+
+#Libraries
+libraries:
+  - cursillosac/global-styling
+
+libraries-override:
+  business_responsive_theme/bootstrap: cursillosac/bootstrap-cdn
+
+#Regions
+regions:
+  header: "Header"
+  search: "Search"
+  primary_menu: "Primary menu"
+
+  topwidget_first: "Top First widget"
+  topwidget_second: "Top Second widget"
+  topwidget_third: "Top Third widget"
+
+  middle_first: "Middle first widget"
+  middle_second: "Middle second widget"
+  middle_third: "Middle third widget"
+
+  highlighted: "Highlighted"
+  page_title: "Page title"
+  breadcrumb: "Breadcrumb"
+  content: "Content"
+  sidebar_first: "Left sidebar"
+  sidebar_second: "Right sidebar"
+
+  footer: "Footer"
+
+  page_top: "Page top"
+  page_bottom: "Page bottom"
+
+  auto_hidden_block: "Auto hidden blocks"
