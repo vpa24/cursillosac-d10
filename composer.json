@@ -16,13 +16,16 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/admin_toolbar": "^3.4",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "3.4",
+        "drupal/business_responsive_theme": "*",
         "drupal/colorbox": "^2.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/d8w3css": "^2.0",
         "drupal/fullcalendar_view": "^5.1",
+        "drupal/gin": "^3.0@RC",
         "drupal/migrate_plus": "6.0",
         "drupal/migrate_tools": "^6.0"
     },
@@ -37,7 +40,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
