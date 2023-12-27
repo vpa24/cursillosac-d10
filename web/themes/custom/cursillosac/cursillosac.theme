@@ -141,8 +141,7 @@ function cursillosac_get_banner_content() {
     $path = base_path() . \Drupal::service('extension.path.resolver')->getPath('theme', 'cursillosac') . theme_get_setting('image_path', 'cursillosac');
   }
 
-   
-    $banner_content = '<img class="img-fluid" src="' . $path . '" alt="Banner" />';
+    $banner_content = '<img class="img-fluid" src="' . $path . '" alt="Banner" width="1320px" />';
   return $banner_content;
 }
 

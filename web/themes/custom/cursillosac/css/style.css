@@ -36,3 +36,11 @@
 .content_layout a:hover {
   text-decoration: underline;
 }
+
+.page-item {
+  margin-right: 10px;
+}
+.page-link {
+  border: 1px solid #ddd;
+  border-radius: 15px !important;
+}
