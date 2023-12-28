@@ -1,5 +1,10 @@
+/* General */
 label {
   display: block !important;
+}
+a {
+  color: #023b6d;
+  text-decoration: none;
 }
 /* menu */
 .navbar {
