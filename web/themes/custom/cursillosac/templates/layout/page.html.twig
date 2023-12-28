@@ -193,14 +193,10 @@
     <!--End Content top-->
     
     <!--start:content -->
-    <div class="row">
-      <div class="col-md-12">{{ page.breadcrumb }}</div>
-    </div>
-
     <div class="row layout">
      <!--- Start Left SideBar -->
       {% if page.sidebar_first %}
-        <div class="sidebar col-md-2" >
+        <div class="sidebar col-md-2 mt-4" >
           {{ page.sidebar_first }}
         </div>
       {% endif %}
@@ -211,25 +207,19 @@
         {% set contentClasses = [
           contentlayout,
           'content_layout',
-          'ps-5'
+          'ps-5',
+          'mt-4',
+          'border',
+          'border-2',
+          'shadow-sm p-3 mb-5 bg-body rounded'
         ] 
         %}
         <div {{attributes.addClass(contentClasses)}}>
+            <div class="col-md-12">{{ page.breadcrumb }}</div>
             {{ page.content }}
         </div>
       {% endif %}
       <!---End content -->
-
-      <!--- Start Right SideBar -->
-      {% if page.sidebar_second %}
-        <div class="sidebar">
-          <div class={{sidebarsecond}}>
-            {{ page.sidebar_second }}
-          </div>
-        </div>
-      {% endif %}
-      <!---End Right SideBar -->
-      
     </div>
     <!--End Content -->
 
