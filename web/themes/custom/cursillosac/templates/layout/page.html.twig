@@ -198,22 +198,24 @@
     </div>
 
     <div class="row layout">
-      <!--- Start Left SideBar -->
+     <!--- Start Left SideBar -->
       {% if page.sidebar_first %}
-        <div class="sidebar" >
-          <div class = {{sidebarfirst}} >
-            {{ page.sidebar_first }}
-          </div>
+        <div class="sidebar col-md-2" >
+          {{ page.sidebar_first }}
         </div>
       {% endif %}
-      <!---End Right SideBar -->
+      <!---End Right SideBar --> 
 
       <!--- Start content -->
       {% if page.content %}
-        <div class="content_layout px-5">
-          <div class={{contentlayout}}>
+        {% set contentClasses = [
+          contentlayout,
+          'content_layout',
+          'ps-5'
+        ] 
+        %}
+        <div {{attributes.addClass(contentClasses)}}>
             {{ page.content }}
-          </div>
         </div>
       {% endif %}
       <!---End content -->
