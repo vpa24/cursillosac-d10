@@ -96,13 +96,10 @@ function cursillosac_preprocess_page(&$variables) {
   }
   $variables['current_path'] = $path;
   
-  // Banner
   // Assign Variable for banner
-  if ($variables['is_front']) {
-    if (theme_get_setting('show_banner','cursillosac') == 1) {
-      $variables['show_banner'] = 1;
-      $variables['banner_content'] = cursillosac_get_banner_content();
-    }
+  if (theme_get_setting('show_banner','cursillosac') == 1) {
+    $variables['show_banner'] = 1;
+    $variables['banner_content'] = cursillosac_get_banner_content();
   }
 
 }
