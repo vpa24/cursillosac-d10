@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e4c6780de76d095f758ead86983d368",
+    "content-hash": "289321c4701a7ae96ea3a92b4c0766f6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1073,52 +1073,6 @@
             "time": "2023-12-15T22:46:04+00:00"
         },
         {
-            "name": "drupal/d8w3css",
-            "version": "2.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/d8w3css.git",
-                "reference": "2.0.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/d8w3css-2.0.12.zip",
-                "reference": "2.0.12",
-                "shasum": "7e22fc30425708cb2230a31dde90f77ed8701b60"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.12",
-                    "datestamp": "1693784357",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Alaa Haddad (alaahaddad.com)",
-                    "homepage": "https://www.drupal.org/u/flashwebcenter",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Speed, Elegance & Ease of Development and Use.",
-            "homepage": "https://drupal.org/project/d8w3css",
-            "support": {
-                "source": "https://git.drupalcode.org/project/d8w3css",
-                "issues": "https://drupal.org/project/issues/d8w3css"
-            }
-        },
-        {
             "name": "drupal/easy_breadcrumb",
             "version": "2.0.5",
             "source": {
@@ -1565,6 +1519,67 @@
                 "source": "https://git.drupalcode.org/project/migrate_tools",
                 "issues": "https://www.drupal.org/project/issues/migrate_tools",
                 "slack": "#migrate"
+            }
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_field.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "997ed67b6873e822fe628f87f65bd6da67e7350c"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "^1",
+                "drupal/colorbox": "^2",
+                "drupal/video_embed_media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1671413311",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "abhinesh",
+                    "homepage": "https://www.drupal.org/user/3645979"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_field"
             }
         },
         {
