@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b74bf5fdedd51ead22683b84fa51f0b3",
+    "content-hash": "f12e544413e32fa7808a93d274fc77a5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1291,6 +1291,130 @@
                     "url": "https://paypal.me/saschaeggi"
                 }
             ]
+        },
+        {
+            "name": "drupal/menu_breadcrumb",
+            "version": "2.0.0-alpha0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
+                "reference": "2.0.0-alpha0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-2.0.0-alpha0.zip",
+                "reference": "2.0.0-alpha0",
+                "shasum": "d031d6a859b3f20a290fd9f812fdc4dace0810ef"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha0",
+                    "datestamp": "1675717886",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aaron",
+                    "homepage": "https://www.drupal.org/user/33420"
+                },
+                {
+                    "name": "gdevlugt",
+                    "homepage": "https://www.drupal.org/user/167273"
+                },
+                {
+                    "name": "rphair",
+                    "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
+                },
+                {
+                    "name": "vaibhavjain",
+                    "homepage": "https://www.drupal.org/user/1159692"
+                },
+                {
+                    "name": "xurizaemon",
+                    "homepage": "https://www.drupal.org/user/76026"
+                }
+            ],
+            "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
+            "homepage": "https://www.drupal.org/project/menu_breadcrumb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_breadcrumb"
+            }
+        },
+        {
+            "name": "drupal/migmag",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migmag.git",
+                "reference": "1.8.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migmag-1.8.0.zip",
+                "reference": "1.8.0",
+                "shasum": "b34d42c045694060f98655f14d8fe52b206756c6"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10"
+            },
+            "replace": {
+                "drupal/migmag_callback_upgrade": "self.version",
+                "drupal/migmag_menu_link_migrate": "self.version",
+                "drupal/migmag_process": "self.version",
+                "drupal/migmag_process_lookup_replace": "self.version",
+                "drupal/migmag_rollbackable": "self.version",
+                "drupal/migmag_rollbackable_replace": "self.version"
+            },
+            "require-dev": {
+                "drupal/eme": "^1@alpha",
+                "drupal/migmag_process": "*",
+                "drupal/migmag_rollbackable": "*",
+                "drupal/smart_sql_idmap": "^1.1@beta",
+                "drush/drush": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.8.0",
+                    "datestamp": "1655899723",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "huzooka",
+                    "homepage": "https://www.drupal.org/user/281301"
+                }
+            ],
+            "description": "Toolset and utilities for Drupal migrations.",
+            "homepage": "https://www.drupal.org/project/migmag",
+            "support": {
+                "source": "https://git.drupalcode.org/project/migmag",
+                "issues": "https://www.drupal.org/project/issues/migmag"
+            }
         },
         {
             "name": "drupal/migrate_plus",
@@ -6716,7 +6840,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/gin": 5
+        "drupal/gin": 5,
+        "drupal/menu_breadcrumb": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
