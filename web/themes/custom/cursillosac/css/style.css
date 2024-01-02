@@ -6,7 +6,7 @@ a {
   color: #023b6d;
   text-decoration: none;
 }
-footer {
+footer:not(.comment-submitted) {
   background-color: #272727;
   color: #8a8a8a;
 }
