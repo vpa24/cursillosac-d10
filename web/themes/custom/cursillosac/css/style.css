@@ -14,7 +14,8 @@ footer {
 .navbar {
   padding: 0 !important;
 }
-#main-menu {
+.main-menu,
+.region-primary-menu {
   background: #023b6d;
 }
 #main-menu li a {
