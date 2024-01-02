@@ -212,3 +212,15 @@ function cursillosac_preprocess_breadcrum(&$variables){
 
   }
 }
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function cursillosac_preprocess_views_view_table(&$vars){
+  $view = $vars['view'];
+  $viewID = $view->id();
+  $vars['attributes']['class'][] = 'table';
+  if ($viewID == 'tam_tinh') {
+    $vars['attributes']['class'][] = 'table-striped table-bordered';
+  }
+}
