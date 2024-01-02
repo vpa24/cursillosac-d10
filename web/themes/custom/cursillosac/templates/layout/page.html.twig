@@ -247,12 +247,13 @@
 {% endif %}
 <!--End bottom -->
 
+{% set currentYear = 'now'|date('Y') %}
 <!-- start: Footer -->
-<footer class="py-3">
-    <!-- Copyright -->
-    <div class="ms-5">  
-        <p>Copyright © {{ 'now' | date('Y') }}</p>  
-    </div>
-  <!-- End Copyright -->     
-</footer>
+  <footer class="py-3">
+      <!-- Copyright -->
+      <div class="ms-5">  
+          <p>Copyright © {{ currentYear }}</p>  
+      </div>
+    <!-- End Copyright -->     
+  </footer>
 <!--End Footer -->
