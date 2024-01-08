@@ -1,0 +1,23 @@
+cursillosac.mobile:
+  label: "Mobile"
+  mediaQuery: "(min-width: 576px)" # Small devices (landscape phones, 576px and up)
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+
+cursillosac.tablet:
+  label: "Tablet"
+  mediaQuery: "all and (min-width: 768px)"
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+
+cursillosac.desktop:
+  label: "Desktop"
+  mediaQuery: "all and (min-width: 992px)"
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
