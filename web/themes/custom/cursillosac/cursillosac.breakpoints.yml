@@ -1,22 +1,51 @@
 cursillosac.mobile:
   label: "Mobile"
-  mediaQuery: "(min-width: 576px)" # Small devices (landscape phones, 576px and up)
+  mediaQuery: "(max-width: 480px)"
   weight: 0
   multipliers:
     - 1x
     - 2x
 
-cursillosac.tablet:
-  label: "Tablet"
-  mediaQuery: "all and (min-width: 768px)"
+# Extra small devices
+cursillosac.extra_small:
+  label: "Extra small"
+  mediaQuery: "(min-width: 481px) and (max-width:767px)"
   weight: 1
   multipliers:
     - 1x
     - 2x
 
-cursillosac.desktop:
-  label: "Desktop"
-  mediaQuery: "all and (min-width: 992px)"
+# Small tablets
+cursillosac.small_tablets:
+  label: "Small tablets"
+  mediaQuery: "(min-width: 768px) and (max-width: 991px)"
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+
+# Large tablets/latops
+cursillosac.laptops:
+  label: "Laptops"
+  mediaQuery: "(min-width: 992px) and (max-width: 1199px)"
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+
+# Desktops
+cursillosac.desktops:
+  label: "Desktops"
+  mediaQuery: "(min-width: 1200px) and (max-width: 1919px)"
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+
+# Extra large screens
+cursillosac.extra_large:
+  label: "Extra large screens"
+  mediaQuery: "(min-width: 1920px)"
   weight: 2
   multipliers:
     - 1x
