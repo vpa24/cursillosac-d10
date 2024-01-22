@@ -130,10 +130,10 @@ function cursillosac_get_banner_content() {
     $path = $file->createFileUrl($uri);
   }
   else {
-    $path = base_path() . \Drupal::service('extension.path.resolver')->getPath('theme', 'cursillosac') . theme_get_setting('image_path', 'cursillosac');
+    $path = base_path() . \Drupal::service('extension.path.resolver')->getPath('theme', 'cursillosac') . theme_get_setting('image_path');
   }
 
-    $banner_content = '<img class="img-fluid" src="' . $path . '" alt="Banner" width="1970px" />';
+  $banner_content = '<img class="img-fluid" src="' . $path . '" alt="Banner" width="1970px" />';
   return $banner_content;
 }
 
@@ -161,13 +161,13 @@ function cursillosac_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\
   $form['cursillosac_settings']['banner']['image_path'] = [
     '#type' => 'managed_file',
     '#title' => t('Image'),
-    '#default_value' => theme_get_setting('image_path','cursillosac'),
+    '#default_value' => theme_get_setting('image_path'),
     '#upload_location' => 'public://',
   ];
  
 
   // Make the uploaded image permanent.
-  $image = theme_get_setting('image_path','cursillosac');
+  $image = theme_get_setting('image_path');
   if(!empty($image)){
     $file = File::load($image[0]);
     $file->setPermanent();
@@ -184,7 +184,7 @@ function cursillosac_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\
  * Implements hook_preprocess_breadcrumb().
  */
 
-function cursillosac_preprocess_breadcrum(&$variables){
+function cursillosac_preprocess_breadcrumb(&$variables){
   //for view pages 
   $route = \Drupal::routeMatch()->getRouteObject();
   $request = \Drupal::request();
