@@ -17,10 +17,6 @@ regions:
   search: "Search"
   primary_menu: "Primary menu"
 
-  topwidget_first: "Top First widget"
-  topwidget_second: "Top Second widget"
-  topwidget_third: "Top Third widget"
-
   middle_first: "Middle first widget"
   middle_second: "Middle second widget"
   middle_third: "Middle third widget"
