@@ -25,6 +25,7 @@ footer:not(.comment-submitted) {
 }
 .views-exposed-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 #views-exposed-form-trang-nha-page-1 {
