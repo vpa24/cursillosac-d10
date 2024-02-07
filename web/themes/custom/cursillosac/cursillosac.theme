@@ -191,3 +191,12 @@ function cursillosac_preprocess_views_view_table(&$vars){
     $vars['attributes']['class'][] = 'table-striped table-bordered';
   }
 }
+
+/**
+ * Implements template_preprocess_block().
+ */
+function cursillosac_preprocess_block(&$variables) {
+  if ( $variables['elements']['#id']  === 'cursillosac_main_menu' ) {
+    $variables['attributes']['class'][] = 'navbar navbar-expand-lg';
+  }
+}

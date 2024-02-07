@@ -1,0 +1,21 @@
+name: CursilloSac Theme
+type: theme
+description: "This is a custom theme based on Drupal 10 Responsive Theme."
+base theme: bootstrap5
+core_version_requirement: ^8 || ^9 || ^10
+
+libraries:
+  - b5cursillosac/base
+
+#Regions
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  banner: 'Banner'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
